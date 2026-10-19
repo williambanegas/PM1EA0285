@@ -11,8 +11,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp"
+        android:layout_margin="16dp"
         android:gravity="center_horizontal"
-        android:background="#EAEAEAEE">
+        android:background="#E6FFFFFF">
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Tomar Foto"
             android:textSize="14sp"
+            android:textStyle="bold"
             android:layout_marginBottom="20dp"
             style="?attr/materialButtonOutlinedStyle" />
 
@@ -63,7 +65,7 @@
                 android:text="País:"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@android:color/black"
                 android:layout_marginEnd="8dp" />
 
             <Spinner
@@ -79,6 +81,7 @@
                 android:layout_height="wrap_content"
                 android:text="+ País"
                 android:textSize="13sp"
+                android:textStyle="bold"
                 android:layout_marginStart="8dp"
                 style="?attr/materialButtonOutlinedStyle" />
         </LinearLayout>
@@ -88,7 +91,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@android:color/black"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="@android:color/black"
+            android:textColorHint="@android:color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etName"
@@ -97,7 +104,8 @@
                 android:hint="Nombre del contacto"
                 android:inputType="textPersonName"
                 android:textSize="16sp"
-                android:background="@color/white" />
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Phone Input -->
@@ -105,7 +113,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@android:color/black"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="@android:color/black"
+            android:textColorHint="@android:color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPhone"
@@ -115,7 +127,8 @@
                 android:inputType="phone"
                 android:maxLength="8"
                 android:textSize="16sp"
-                android:background="@color/white" />
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Note Input -->
@@ -123,7 +136,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@android:color/black"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="@android:color/black"
+            android:textColorHint="@android:color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNote"
@@ -133,7 +150,8 @@
                 android:inputType="textLongMessage|textMultiLine"
                 android:minLines="3"
                 android:textSize="16sp"
-                android:background="@color/white" />
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Action Buttons -->
@@ -143,6 +161,7 @@
             android:layout_height="52dp"
             android:text="Guardar"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_marginBottom="10dp" />
 
         <Button
@@ -151,6 +170,7 @@
             android:layout_height="52dp"
             android:text="Limpiar"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_marginBottom="10dp"
             style="?attr/materialButtonOutlinedStyle" />
 
@@ -160,6 +180,7 @@
             android:layout_height="52dp"
             android:text="Contactos Salvados"
             android:textSize="16sp"
+            android:textStyle="bold"
             style="?attr/materialButtonOutlinedStyle" />
 
     </LinearLayout>
